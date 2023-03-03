@@ -1,0 +1,248 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVAexQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWVAexQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf) format('truetype');
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 50%;
+  margin: 20px auto;
+}
+.container .title-proyect {
+  color: #5b50f7;
+  margin: 10px 0px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .create-element {
+  display: inline-block;
+  margin-left: 15px;
+}
+.container .create-element input {
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #eee;
+  transition: all 300ms ease;
+}
+.container .create-element input:focus {
+  border-bottom: 1px solid #5b50f7;
+}
+.container .create-element button {
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid #5b50f7;
+  color: #5b50f7;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.container .create-element button:hover {
+  color: #fff;
+  background: #5b50f7;
+}
+.container table {
+  width: 100%;
+  margin: 15px 0px;
+  border-collapse: collapse;
+  box-shadow: 0px 2px 3px #bfbfbf;
+}
+.container table thead tr th {
+  padding: 10px;
+  font-weight: 600;
+}
+.container table tbody tr {
+  transition: all 300ms ease;
+}
+.container table tbody tr.update {
+  background-color: #eee;
+  box-shadow: 0px 0px 20px #a5a5a5;
+}
+.container table tbody tr:hover {
+  background: #eee;
+}
+.container table tbody tr td {
+  padding: 10px;
+  border: 1px solid #eee;
+}
+.container table tbody tr td input {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border: 1px solid #fff;
+  width: 100%;
+  width: auto;
+}
+.container table tbody tr td input:focus {
+  border: 1px solid #5b50f7;
+}
+.container table tbody tr td button {
+  font-size: 14px;
+  background: none;
+  border: none;
+  outline: none;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.container table tbody tr td button.update {
+  color: #5b50f7;
+}
+.container table tbody tr td button.delete {
+  color: #a12d2d;
+  float: right;
+}
+.container .pagination ul li {
+  display: inline-block;
+}
+.container .pagination ul li button {
+  cursor: pointer;
+  padding: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  transition: all 300ms ease;
+}
+.container .pagination ul li button:hover {
+  background-color: #5b50f7;
+  color: #fff;
+}
+.container .pagination ul li.current-page button {
+  cursor: default;
+  background-color: #5b50f7;
+  color: #fff;
+}
+.container .message {
+  width: 500px;
+  color: #fff;
+  position: fixed;
+  bottom: 50px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  opacity: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: message 1s 1 ease-in-out;
+}
+@keyframes message {
+  from {
+    bottom: 0px;
+    opacity: 0;
+  }
+  to {
+    bottom: 50px;
+    opacity: 1;
+  }
+}
+.container .message .message-title {
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  font-weight: 600;
+}
+.container .message .message-description p {
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+}
+.container .message.hidden-message {
+  animation: hiddenMS 1s 1 ease-in-out;
+  bottom: 0px;
+  opacity: 0;
+}
+@keyframes hiddenMS {
+  from {
+    bottom: 50px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0px;
+    opacity: 0;
+  }
+}
+.container .message.error-message .message-title {
+  background: #b83434;
+}
+.container .message.error-message .message-description p {
+  background: #a12d2d;
+}
+.container .message.update-message .message-title {
+  background: #432dc0;
+}
+.container .message.update-message .message-description p {
+  background: #3926a0;
+}
+.container .message.creation-message .message-title {
+  background: #5e9c3a;
+}
+.container .message.creation-message .message-description p {
+  background: #518532;
+}
+.container .message.removal-message .message-title {
+  background: #a7a52e;
+}
+.container .message.removal-message .message-description p {
+  background: #8f8d2a;
+}
+#dynamic-content1 {
+  display: none;
+}
+#dynamic-content2 {
+  display: none;
+}
+#dynamic-content3 {
+  display: none;
+}
+#dynamic-content4 {
+  display: none;
+}
+#seleccionado {
+	 display: block;
+}
+
+
+

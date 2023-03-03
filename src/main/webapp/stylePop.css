@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edeef6;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+button {
+  background-color: #47a386;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 25px;
+}
+
+.modal-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;  
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fff;
+  width: 650px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal h1 {
+  margin: 0;
+}
+
+.modal p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+.reportes {
+  position: relative;
+  width: 90%;
+  margin: 2em auto;
+    
+}
+.reportes #search {
+    width: 40%;
+    display: block;
+}
+.reportes .dateField {
+  width: 45%;
+  display: inline-block;
+}
+.reportes .dateField label {
+    display: block;
+  margin: 1em 1em 1em 0;
+}
+.reportes input {
+  width: 80%;
+  display: inline-block;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+.reportes #dropModules {
+    padding: .5em;
+    width: 40%;
+    border-radius: 5px;
+    margin: 2em 0;
+    display: block;
+}
+.reportes .button {
+  cursor: pointer;
+  width: 150px;
+  padding: 1em;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  margin: 1em auto 0 auto;
+}
+.reportes #excel {
+  background: #262974;
+}
+.reportes #excel:hover, .reportes #report:hover {
+  background: #6d6e72;
+}
+.reportes #report {
+  background: #a42c16;
+  left: 0;
+}
+.reportes h3 {
+    margin: 3em 0 0 0;
+}
+
+.reportes table {
+    border-collapse: collapse;
+    margin: 1em 0 3em 0;
+    width: 100%;
+}
+.reportes table, .reportes th, .reportes tr, .reportes td {
+    border:1px solid;
+}
+.reportes table td, .reportes table th {
+    padding: 1em;
+}
+
+.reportes table td {
+    text-align:center;
+}
+
+
+@media screen and (max-width: 480px) {
+    .reportes #dropModules, .reportes .dateField {
+        width: 100%;
+    }
+    .reportes .dateField input {
+        width: 95%;
+    }
+    .reportes .button {
+        display: block;
+        width: 80%;
+        margin: 1em auto;
+    }
+    .reportes #search {
+        width: 100%;
+    }
+    .reportes .tabla {
+        overflow-x: auto;
+        font-size: 14px;
+    }
+   
+}
+#pai div{
+   display: none;
+}
+.oculto{
+	display: none;
+}

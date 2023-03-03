@@ -1,0 +1,142 @@
+.dropfile{
+
+  height:170px;
+  border-radius:30px;
+
+  text-align:center;
+  padding-top:30px;
+}
+
+.upl{
+  margin:0 auto;
+  margin-top:20px;
+  font-size:20px;
+}
+.drop_uploader.drop_zone {
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    border: 3px dashed #999999;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.drop_uploader.drop_zone.hover {
+    border: 3px dashed #4A90E2;
+}
+
+.drop_uploader.drop_zone .text_wrapper {
+    margin-top: 30px;
+}
+
+.drop_uploader.drop_zone .text_wrapper i {
+    font-size: 50px;
+    color: #9B9B9B;
+    position: relative;
+    top: 14px;
+    margin-right: 25px;
+}
+
+.drop_uploader.drop_zone .text {
+    font-family: "Raleway";
+    font-size: 24px;
+    color: #9B9B9B;
+}
+
+.drop_uploader.drop_zone ul.files {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    list-style: none;
+    margin: 10px auto 35px;
+}
+
+.drop_uploader.drop_zone ul.files li {
+    font-family: "Raleway";
+    font-size: 18px;
+    color: #000000;
+    background-color: #f5f5f5;
+    border-top: 2px solid #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
+    margin: 0;
+    padding: 5px;
+}
+
+.drop_uploader.drop_zone ul.files.thumb {
+    width: 90%;
+    text-align: left;
+    list-style: none;
+    margin-bottom: 35px;
+    overflow: auto;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li {
+    width: 110px;
+    display: inline-block;
+    float: left;
+    font-family: "Raleway";
+    font-size: 18px;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li div.thumbnail {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    background-size: cover;
+    margin: 0 auto;
+    border: 1px solid #e1e1e1;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li div.thumbnail i {
+    font-size: 48px;
+    position: relative;
+    top: calc(50% - 24px);
+    color: #999999;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li span.title {
+    width: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+ ul.files.thumb li span.title {
+    width: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.drop_uploader.drop_zone ul.files li:nth-child(even) {
+    background-color: transparent;
+}
+
+.drop_uploader.drop_zone ul.files li i {
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    margin: 0px 10px;
+}
+
+.drop_uploader.drop_zone .errors p {
+    color: #FF0000;
+}
+
+.drop_uploader.drop_zone input[type=file] {
+    display: none;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
