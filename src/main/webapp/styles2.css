@@ -228,21 +228,5 @@
 .container .message.removal-message .message-description p {
   background: #8f8d2a;
 }
-#dynamic-content1 {
-  display: none;
-}
-#dynamic-content2 {
-  display: none;
-}
-#dynamic-content3 {
-  display: none;
-}
-#dynamic-content4 {
-  display: none;
-}
-#seleccionado {
-	 display: block;
-}
-
 
 

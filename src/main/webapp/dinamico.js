@@ -1,13 +1,15 @@
 const botones = [
   document.getElementById("toggle-paragraph"),
   document.getElementById("toggle-paragraph2"),
-  document.getElementById("toggle-paragraph3")
+  document.getElementById("toggle-paragraph3"),
+  document.getElementById("toggle-paragraph4")
 ];
 
 const dynamicContents = [
   document.getElementById("dynamic-content"),
   document.getElementById("dynamic-content2"),
-  document.getElementById("dynamic-content3")
+  document.getElementById("dynamic-content3"),
+  document.getElementById("dynamic-content4")
 ];
 
 // Agregar clase .seleccionado a la primera opción
@@ -30,4 +32,3 @@ botones.forEach((boton, indice) => {
     dynamicContent.classList.add('seleccionado');
   });
 });
-

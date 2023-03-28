@@ -93,7 +93,7 @@ btn_create.addEventListener('click', function () {
     const correo = input_correo.value.trim();
     // si el nombre no esta vacio y correo es un numero:
 
-    if (nombre != '' && isNaN(correo) && correo != "") {
+   if (nombre != '' && correo != "" && /^\S+@\S+\.\S+$/.test(correo)) {
         lastId++;
         // informacion requerida para la tabla (id,nombre,correo)
         const data = {
@@ -118,7 +118,7 @@ btn_create.addEventListener('click', function () {
         deleteMessage(1000);
     } else {
         // Error (el nombre esta vacio o la correo no es un numero)
-        containerPopupMessages.innerHTML = message('Completa los campos', 'Hay campos sin rellenar, Asegurese de rellenar correctamente los campos', 'error');
+        containerPopupMessages.innerHTML = message('Completa los campos', 'Hay campos sin rellenar o el correo no es válido, asegúrese de rellenar correctamente los campos', 'error');
         deleteMessage(1000);
     }
 });
@@ -173,7 +173,7 @@ function actionsTable() {
                     correo: age
                 };
               
-                if(!isNaN(age)){
+                if(isNaN(age)){
                     // reemplazar un elemento en el array por otro con .splice
                     elements.splice(index, 1, data);
                     // reemplaza los datos en 'data' con nueva informacion
@@ -366,12 +366,3 @@ function displayElements() {
     }
 
 }
-document.getElementById("toggle-paragraph").addEventListener("click", function() {
-  var dynamicContent = document.getElementById("dynamic-content");
-  if (dynamicContent.style.display === "none") {
-    dynamicContent.style.display = "block";
-  } else {
-    dynamicContent.style.display = "none";
-  }
-});
-
